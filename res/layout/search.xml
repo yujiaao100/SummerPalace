@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/top_search"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/top_search" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/top_search" >
+
+        <EditText
+            android:id="@+id/TextResult"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageButton1"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="0.05"
+            android:hint="请输入景点名称或描述" />
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="#ffffff"
+            android:src="@drawable/icon_speak" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Search"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/Search"
+        android:text="按名称搜索" />
+
+     <Button
+         android:id="@+id/Search1"
+         style="?android:attr/buttonStyleSmall"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/Search"
+         android:layout_alignBottom="@+id/Search"
+         android:layout_marginLeft="23dp"
+         android:layout_toRightOf="@+id/Search"
+         android:text="按特征搜索" />
+     <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Search1"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000000"
+        android:layout_marginTop="60dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="C"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where1"
+                android:layout_width="110dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="长廊"
+                android:textSize="22dp" 
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/f"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="F"
+                android:textSize="22dp" 
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/where2"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="佛香阁"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/p"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="P"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where3"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="排云殿"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/q"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="Q"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where4"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                 android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="清晏舫"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/r"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="R"
+                android:textSize="22dp" 
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/where5"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="仁寿殿"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/s"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="S"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where6"
+                android:layout_width="100dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="十七孔桥"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where7"
+                android:layout_width="103dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="苏州街"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/w"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="W"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where8"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                 android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="文昌阁"
+                android:textSize="22dp" 
+                android:textColor="#000000"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/x"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="X"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where9"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="谐趣园"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/y"
+                android:layout_width="20dp"
+                android:layout_height="26dp"
+                android:gravity="center"
+                android:text="Y"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/where10"
+                android:layout_width="80dp"
+                android:layout_height="26dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center"
+                android:text="玉澜堂"
+                android:textSize="22dp"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

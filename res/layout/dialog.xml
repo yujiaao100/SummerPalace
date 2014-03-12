@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffcbb3"
+    android:scrollbarStyle="outsideOverlay" >
+ 
+<TableLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbars="vertical" >
+ 
+<TableRow>
+
+<TextView
+    android:id="@+id/name"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+     android:textColor="#000000"
+    android:textSize="22dp"
+    android:layout_marginTop="10dp"/>
+</TableRow>
+<TableRow>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"/>
+</TableRow>
+<TableRow>
+<ImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="500dp"
+        android:src="@drawable/p1" />
+
+</TableRow>
+<TableRow>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:text=""/>
+
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/con1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="景点详细介绍1"
+    android:text="   位于万寿山南麓，面向昆明湖，被依万寿山，东起邀月门，西止石丈停。全长728米，1992年被世界吉尼斯纪录认定为世界最长的长廊。"
+    android:maxLines="200"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical"
+     android:textColor="#333333"
+    android:textSize="18dp" />
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/con2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="景点详细介绍2"
+    android:text="   廊上的每根枋梁上都有彩绘，共有图画14000余幅，内容包括山水风景、花鸟鱼虫、人物典故等。画中的人物画均取材于中国古典名著。"
+    android:maxLines="200"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical" 
+    android:textColor="#333333"
+    android:textSize="18dp"/>
+</TableRow>
+<TableRow>
+<TextView
+    android:id="@+id/con3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="景点详细介绍3"
+    android:text="   长廊始建于乾隆十五年颐和园长廊（1750），后被英法联军烧毁，光绪十二年（1886）重建。长廊东起邀月门，西至石丈亭，共二百七十三间，
+    全长七百二十八米，枋梁上还绘有人物、山水、花鸟等各种彩画八千多幅，是中国古典园林中最长的游廊。长廊中间建有留佳、寄澜、秋水、清遥四座八角重檐的亭子，依山临水，
+    以排云殿为中心，向东西两边对称地展开，将分布在万寿山前的建筑连成一气。"
+    android:maxLines="200"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbarStyle="insideInset"
+    android:scrollbars="vertical" 
+    android:textColor="#333333"
+    android:textSize="18dp"/>
+</TableRow>
+<TableRow>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"
+    android:text=""/>
+
+</TableRow>
+<TableRow>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="视频链接"
+    android:textColor="#ff0066"
+    android:textSize="22dp" />
+</TableRow>	
+<TableRow>
+<TextView
+    android:id="@+id/shipin2"
+    android:text="http://v.youku.com/v_show/id_XMjg1MzcxNg==.html"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    android:autoLink="web"
+    android:linksClickable="true"
+    android:scrollHorizontally="true"
+    android:textColor="#3300cc"
+    android:textColorLink="@drawable/link"
+    android:textSize="18dp" />
+</TableRow>
+<Button
+        android:id="@+id/buttonweibo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="微博分享" 
+        android:textColor="#1111ff"
+        android:textSize="15dp"
+        android:layout_below="@+id/shipin2" />
+</TableLayout>
+</ScrollView>
+
+
+
